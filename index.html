@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Music Festival</title>
+  <title>Slow Motion</title>
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #1c46b9;
+      font-family: monospace;
+      background-color: #14799a;
     }
 
     /* Root wraps the content divs */
@@ -27,7 +27,25 @@
 
     pre {
       font-size: 11px;
-      text-align: center;
+      /* text-align: center; */
+    }
+
+    a {
+        color: rgb(110, 122, 148);
+        font-weight: bold;
+    }
+
+    .ticketLink {
+        font-size: larger;
+    }
+
+    nav {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .transportAscii {
+      margin-top: 0px;
     }
 
     .content {
@@ -54,6 +72,21 @@
       margin-top: 5px;
     }
 
+
+    .imageDouble img {
+      max-width: 40%;
+      border-radius: 2%;
+
+    }
+    .imageDouble {
+      text-align: center;
+      margin-top: 5px;
+
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
     .roundedImage img {
       max-width: 80%;
       border-radius: 50%;
@@ -63,7 +96,13 @@
         text-align: center;
     }
 
-    h3, h4, p {
+    h1 {
+        margin: 3px;
+        font-family: cursive;
+        font-style: italic;
+    }
+
+    h3, h4, h5, p {
         margin: 4px;
         text-align: center;
     }
@@ -93,9 +132,11 @@
 <body>
   <div id="root">
     <div class="content">
-      <h3>Welcome to...</h3>
+      <h1>Welcome to...
+      </h1>
+      <br/>
       <pre>
-        (     __)                            ,-(_      __)    
+        (     __)                          __   _            (__)    
         ,gg,            `-(       __)    _(  )_( )_        (_    )  __)-'    
        i8""8i   ,dPYb,     (____)       (_   _    _)        `-(____)-'@@,    
        `8,,8'   IP'`Yb  - -  :   :  - -   (_) (__)      ,,,.   ,@@@@@@/@@,   
@@ -111,7 +152,7 @@
        dP""Y8dP""Y88P""Y8b              I8            ][             ][      
        Yb, `88'  `88'  `88              I8                                   
 _( )_   `"  88    88    88           88888888 gg  `'. .'`'. .'`'. .'`'. .'`'.
-(_(%)_)      88    88    88              I8    ""                             
+(_(%)_)     88    88    88              I8    ""                             
  (_)\       88    88    88    ,ggggg,   I8    gg     ,ggggg, ,ggg,,ggg,      
      | __   88    88    88   dP"  "Y8gggI8    88    dP"  "Y8g8" "8P" "8,     
      |/_/   88    88    88  i8'    ,8I ,I8,   88   i8'    ,8I    8I   8I     
@@ -122,15 +163,26 @@ _( )_   `"  88    88    88           88888888 gg  `'. .'`'. .'`'. .'`'. .'`'.
       <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
 
       <p>
+        <br/>
         Slow Motion is an intimate, high fidelity, 3-day retreat celebrating music, 
         dance and 9 years of community at Second Hand Records. It’s an extension of 
         Musicland, where we can explore beyond the confines of our home in Brooklyn.
+        <br/>
+        <br/>
+        <pre>╔═*.·:·.✧ ✦ ⋆⋅☆⋅⋆ ✧ ✦✧.·:·.*═╗</pre>
+        <div class="ticketLink">
+            <a href="https://www.slow-motion.net/pages/tickets">Tickets Here!</a> 
+        </div>
+        <pre>╚═*.·:·.✧ ✦ ⋆⋅☆⋅⋆ ✧ ✦✧.·:·.*═╝</pre>
       </p>
       <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
       <nav>
         <a href="#location">Location</a> |
         <a href="#campmap">Camp Map</a> |
+        <a href="#transportation">Transportation</a> |
+        <a href="#miscellaneous">????</a>
       </nav>
+      <pre>.・。.・゜✭・.・✫・゜・。.</pre>
     </div>
     <div class="content" id="location">
         <h3>Location</h3>
@@ -143,7 +195,7 @@ _( )_   `"  88    88    88           88888888 gg  `'. .'`'. .'`'. .'`'. .'`'.
         <pre>.・。.・゜✭・.・✫・゜・。.</pre>
 
         <p>
-            ~1.5 hours driving from NYC, with public transport options below!
+            ~1.5 hours driving from NYC, with public transport options <a href="#transportation">below</a>!
         </p>
         <p>
             We'll be nestled next to the Delaware Water Gap National Recreation Area and Kittatinny Mountain Ridge full of hikes, trails, lookouts, streams and waterfalls.
@@ -157,10 +209,11 @@ _( )_   `"  88    88    88           88888888 gg  `'. .'`'. .'`'. .'`'. .'`'.
         <p>
             Our favorites spots are Jenny Jump State Forest and campgrounds (8 minute drive), Mt. Tammany (10 min) and Worthington State Forest (20 min).
         </p>
-        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
 
     </div>
     <div class="content">
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <h4>Camp Hope</h4>
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <div class="roundedImage">
@@ -171,6 +224,24 @@ _( )_   `"  88    88    88           88888888 gg  `'. .'`'. .'`'. .'`'. .'`'.
         <p>
             We were sure Camp Hope was the right space for Slow Motion when we learned of its ties back to the Paradise Garage - our own doorkeeper Angel worked there with a swath of club alumni in ’87.        
         </p>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <h4>Lodging</h4>
+        <div class="imageDouble">
+            <img src="lodging.png" alt="Cabin at camp hope">
+            <img src="bunk_beds.png" alt="bunk at camp hope">
+        </div>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <p>
+            2 nights in an on-site cabin (Friday & Saturday)
+            <br/>
+            <br/>
+            Cozy, furnished and heated with bathrooms
+            Kitchen access
+            <br/>
+            <br/>
+            No commute, no stress—just roll into bed
+        </p>
+            <pre>.・。.・゜✭・.・✫・゜・。.</pre>
 
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <h4  id="campmap">Camp Map</h4>
@@ -178,10 +249,84 @@ _( )_   `"  88    88    88           88888888 gg  `'. .'`'. .'`'. .'`'. .'`'.
             <img src="camp_map.png" alt="Map of camp grounds">
         </div>
         
-        <a href="camp_map.png" download="slow-motion-camp-map">Click for fullscreen</a>
+        <a href="camp_map.png" download="slow-motion-camp-map">Click to download!</a>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
     </div>
-    <div class="content">
+    <div class="content" id="transportation">
+        <pre class="transportAscii">
+                                                         _________________________   
+                    /\\      _____          _____       |   |     |     |    | |  \  
+     ,-----,       /  \\____/__|__\_    ___/__|__\___   |___|_____|_____|____|_|___\ 
+  ,--'---:---`--, /  |  _     |     `| |      |      `| |                    | |    \
+ ==(o)-----(o)==J    `(o)-------(o)=   `(o)------(o)'   `--(o)(o)--------------(o)--'  
+ ｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡｡･ﾟﾟ･｡･ﾟﾟ･
+        </pre>
+        <h4>Transportation</h4>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <h5>Driving</h5>
+        <pre>
+   -           __
+ --          ~( @\   \
+---   _________]_[__/_>________
+     /  ____ \  >     |  ____  \
+    =\_/ __ \_\_______|_/ __ \__D
+________(__)_____________(__)____
+        </pre>
+        <p>If you're driving your car or renting one, Camp Hope is ~1.5 hours from NYC. Parking is free!</p>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <h5>Bus</h5>
+        <pre>
+                          __
+ .-----------------------'  |
+/| _ .---. .---. .---. .---.|
+|j||||___| |___| |___| |___||
+|=|||================MARTZ==|
+[_|j||(O)\__________|(O)\___]
+        </pre>
+        <p>
+            Bus is the best way to get to Camp Hope using public transportation.
+            <br/>
+            <br/>
+            Take the Martz bus from NY Port Authority to Stroudsburg, PA. Have someone pick you up or call an Uber or Lyft.
+            <br/>
+            <br/>
+            On Friday only, you can take the Martz bus from NY Port Authority to Panther Valley, which will leave you closer than Stroudsburg.
+        </p>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <h5>Train</h5>
+        <pre>
+     e@@@@@@@@@@@@@@@
+    @@@""""""""""
+   @" ___ ___________
+  II__[w] | [i] [z] |
+ {======|_|~~~~~~~~~|
+/oO--000'"`-OO---OO-'
+        </pre>
+        <p>
+            Take the NJ Transit Rail from NY Penn Station to Dover, NJ.
+            <br/>
+            <br/>
+            Have someone pick you up or call an Uber or Lyft.
+            <br/>
+        </p>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <h5>Carpool</h5>
+        <pre>
+                                  @
+               (__)    (__) _____/
+            /| (oo) _  (oo)/----/_____    *
+  _o\______/_|\_\/_/_|__\/|____|//////== *- *  * -
+ /_________   \   00 |   00 |       /== -* * -
+[_____/^^\_____\_____|_____/^^\_____]     *- * -
+      \__/                 \__/
+        </pre>
+        <p>
+            <p>If you need or can offer a ride between Brooklyn or a bus / train station, <a href="mailto:slowmotionweekender@gmail.com" title="mailto:slowmotionweekender@gmail.com">email us</a> and we'll get you sorted.</p>
+        </p>
+    </div>
+    <div class="content" id="miscellaneous">
       <p>Join us for music, art, and open skies 🌤️</p>
+      <p>Room for anything else you can think of!</p>
     </div>
   </div>
 </body>
