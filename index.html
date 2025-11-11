@@ -10,6 +10,11 @@
       margin: 0;
       font-family: monospace;
       background-color: #14799a;
+      background-image: url("background.png");
+      background-attachment: fixed;
+
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     /* Root wraps the content divs */
@@ -129,6 +134,14 @@
     }
 
     @media (min-width: 700px) {
+        body {
+            background-image: url("background_leaves.png");
+            background-attachment: fixed;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
         .content {
             max-width: 650px
         }
