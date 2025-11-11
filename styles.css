@@ -1,0 +1,94 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Container */
+.container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+/* Content */
+.content {
+    margin: 2rem 0;
+}
+
+.content p {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer p {
+    font-size: 0.875rem;
+    color: #999;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.25rem;
+        border-radius: 8px;
+    }
+    
+    header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .content p {
+        font-size: 0.95rem;
+    }
+    
+    footer p {
+        font-size: 0.8rem;
+    }
+}
