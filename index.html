@@ -6,10 +6,18 @@
   <title>Slow Motion</title>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: monospace;
-      background-color: #1f7974;
+      background-color: rgb(57 85 109);
+
+      background-attachment: scroll;
+      background-image: url("background.png");
+      background-size: 100% 200%;
     }
 
     /* Root wraps the content divs */
@@ -40,9 +48,24 @@
     }
 
     nav {
-        margin-top: 15px;
-        margin-bottom: 15px;
+        /* margin-top: 15px;
+        margin-bottom: 15px; */
+        padding: 10px;
         text-align: center;
+        position: fixed;
+        bottom: 0;
+        background-color: rgb(68 96 118 / 97%);
+        line-height: 1.5em;
+        color: rgb(255 255 255);
+        font-weight: bold;
+        border-radius: 5%;
+    }
+    
+    nav a {
+        /* margin-top: 15px;
+        margin-bottom: 15px; */
+        color: rgb(255, 255, 255);
+        font-weight: bold;
     }
 
     .transportAscii {
@@ -54,7 +77,7 @@
       flex-direction: column;
       align-items: center;
 
-      background-color: rgb(0 0 0 / 33%);
+      background-color: rgb(0 0 0 / 53%);
       border-radius: 10px;
       color: white;
       margin-bottom: 1em;
@@ -145,15 +168,29 @@
             max-width: 650px;
             background-color: rgb(0 0 0 / 67%);
         }
+
+        nav {
+            background-color: rgb(36 49 22 / 76%);
+        }
     }
+
+    
   </style>
 </head>
 <body>
   <div id="root">
+    <nav class="sticky" id="stickyNav">
+        <a href="#location">Location</a> |
+        <a href="#campmap">Camp Map</a> |
+        <a href="#transportation">Transportation</a> |
+        <a href="#lineup">Lineup</a> |
+        <a href="#rules">Rules</a> |
+        <a href="#faq">FAQ</a> |
+        <a href="#contact">Contact</a>
+    </nav>
     <div class="content">
       <h1>Welcome to...
       </h1>
-      <br/>
       <pre>
         (     __)                          __   _            (__)    
         ,gg,            `-(       __)    _(  )_( )_        (_    )  __)-'    
@@ -178,11 +215,13 @@
      |      88    88    Y8,,d8,   ,d8',d88b,_,88,_,d8,   ,d8'    8I   Yb,    
      |      88    88    `Y8P"Y8888P"  8P""Y88P""Y8P"Y8888P"      8I   `Y8    
       </pre>
-      
       <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
 
+      <div class="roundedImage">
+          <img src="background_leaves.png" alt="Delaware Gap in the fall">
+      </div>
+      <pre>.・。.・゜✭・.・✫・゜・。.</pre>
       <p>
-        <br/>
         Slow Motion is an intimate, high fidelity, 3-day retreat celebrating music, 
         dance and 9 years of community at Second Hand Records. It’s an extension of 
         Musicland, where we can explore beyond the confines of our home in Brooklyn.
@@ -190,24 +229,19 @@
         <br/>
         <pre>╔═*.·:·.✧ ✦ ⋆⋅☆⋅⋆ ✧ ✦✧.·:·.*═╗</pre>
         <div class="ticketLink">
-            <a href="https://www.slow-motion.net/pages/tickets">Tickets Here!</a> 
+            <a href="https://www.slow-motion.net/pages/tickets">
+                <img src="http://www.gigaglitters.com/created/ZQhtJSKFx9.gif" width="360" height="60" border="0" alt="glitter maker" />
+            </a> 
         </div>
         <pre>╚═*.·:·.✧ ✦ ⋆⋅☆⋅⋆ ✧ ✦✧.·:·.*═╝</pre>
       </p>
       <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-      <nav>
-        <a href="#location">Location</a> |
-        <a href="#campmap">Camp Map</a> |
-        <a href="#transportation">Transportation</a> |
-        <a href="#lineup">Lineup</a> |
-        <a href="#rules">Rules</a> |
-        <a href="#faq">FAQ</a> |
-        <a href="#contact">Contact</a>
-      </nav>
-      <pre>.・。.・゜✭・.・✫・゜・。.</pre>
     </div>
     <div class="content" id="location">
-        <h3>Location</h3>
+        <!-- <img src="http://i.picasion.com/gl/92/kW2X.gif" width="240" height="46" border="0" alt="glitter maker" /> -->
+        <img src="http://www.gigaglitters.com/created/Rwyhq6rtTi.gif" width="240" height="60" border="0" alt="glitter maker" />
+
+        <!-- <img src="http://i.picasion.com/gl/92/kW2T.gif" width="301" height="46" border="0" alt="glitter maker" /> -->
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <h4>Hope Conference & Renewal Center ✨ Blairstown, NJ</h4>
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
@@ -236,7 +270,9 @@
     </div>
     <div class="content">
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-        <h4>Camp Hope</h4>
+
+        <img src="http://www.gigaglitters.com/created/q6OvLsZd9h.gif" width="300px" height="65px" border="0" alt="glitter maker" />
+
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <div class="roundedImage">
             <img src="camp_hope_indoors.png" alt="Delaware Gap in the fall">
@@ -294,7 +330,8 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
  ==(o)-----(o)==J    `(o)-------(o)=   `(o)------(o)'   `--(o)(o)--------------(o)--'  
  ｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡｡･ﾟﾟ･｡･ﾟﾟ･
         </pre>
-        <h4>Transportation</h4>
+        <img src="http://www.gigaglitters.com/created/fP8XamU3BN.gif" width="400px" height="65px" border="0" alt="glitter maker" />
+
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <h5>Driving</h5>
         <pre>
@@ -363,7 +400,9 @@ ________(__)_____________(__)____
         <p>Lineup will be posted... 🎵</p>
     </div>
     <div class="content" id="rules">
-        <h3>Rules</h3>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <img src="http://www.gigaglitters.com/created/ZtfjTW6gHG.gif" width="200" height="60" border="0" alt="glitter maker" />
+
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <h4>Slow Motion is about moving together, with care</h4>
         <p>
@@ -434,7 +473,8 @@ ________(__)_____________(__)____
     </div>
 
     <div class="content" id="faq">
-        <h4>FAQ</h4>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <img src="http://www.gigaglitters.com/created/EtsDrk7xOf.gif" width="160" height="60" border="0" alt="glitter maker" />
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <div class="dropdown">
             <details>
@@ -536,5 +576,9 @@ ________(__)_____________(__)____
       <p>Room for anything else you can think of!</p>
     </div>
   </div>
+
+  <script>
+      
+  </script>
 </body>
 </html>
