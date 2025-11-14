@@ -6,6 +6,13 @@
   <title>Slow Motion</title>
 
   <style>
+    *
+    {
+        /* margin: 0; */
+        /* padding: 0; */
+        box-sizing: border-box;
+    }
+
     html {
       scroll-behavior: smooth;
     }
@@ -16,8 +23,11 @@
       background-color: rgb(57 85 109);
 
       background-attachment: scroll;
-      background-image: url("background.png");
+      background-image: url("background_leaves.png");
       background-size: 100% 200%;
+
+      width: 100%;
+      height: 100vh;
     }
 
     /* Root wraps the content divs */
@@ -54,11 +64,11 @@
         text-align: center;
         position: fixed;
         bottom: 0;
-        background-color: rgb(68 96 118 / 97%);
         line-height: 1.5em;
         color: rgb(255 255 255);
         font-weight: bold;
         border-radius: 5%;
+        background-color: rgb(36 49 22 / 96%);
     }
     
     nav a {
@@ -174,10 +184,79 @@
         }
     }
 
+    .fallingLeaves {
+        position: absolute;
+        height: 100vh;
+        display: flex;
+    }
+
+    .marqueeUnderLayer marquee{
+        z-index: -1;
+        position: absolute;
+        height: 100vh;
+        position: absolute;
+    }
+
+    .marqueeLayer marquee{
+        height: 100vh;
+        position: absolute;
+    }
+
+    marquee {
+        /* height: 100vh; */
+        /* position: absolute; */
+        pointer-events: none
+    }
+
     
   </style>
 </head>
 <body>
+    <div class="marqueeUnderLayer">
+        <marquee behavior="alternate" scrollamount="15" direction="right">
+            <marquee  behavior="alternate" scrollamount="10" direction="up">
+                <img src="leaf.gif" width="100px" height="70px"/>
+            </marquee>
+        </marquee>
+        <marquee behavior="alternate" scrollamount="15">
+            <marquee  behavior="alternate" scrollamount="10" direction="up">
+                <img src="leaf.gif" width="100px" height="70px"/>
+            </marquee>
+        </marquee>
+        <marquee behavior="alternate" scrollamount="20"  direction="down">
+            <marquee  behavior="alternate" scrollamount="10" direction="left">
+                <img src="orange_leaf.gif" width="100px" height="70px"/>
+            </marquee>
+        </marquee>
+        <marquee behavior="alternate" scrollamount="20"  direction="down">
+            <marquee  behavior="alternate" scrollamount="10" direction="right">
+                <img src="orange_leaf.gif" width="100px" height="70px"/>
+            </marquee>
+        </marquee>
+        <marquee behavior="alternate" scrollamount="20"  direction="right">
+            <marquee  behavior="alternate" scrollamount="10" direction="up">
+                <img src="orange_leaf.gif" width="100px" height="70px"/>
+            </marquee>
+        </marquee>
+    </div>
+
+    <div class="marqueeLayer">
+        <marquee behavior="alternate" scrollamount="20"  direction="down">
+            <marquee  behavior="alternate" scrollamount="10" direction="right">
+                <img src="orange_leaf.gif" width="100px" height="70px"/>
+            </marquee>
+        </marquee>
+        <marquee behavior="alternate" scrollamount="10">
+            <marquee  behavior="alternate" scrollamount="10" direction="down">
+                <img src="leaf.gif" width="100px" height="70px"/>
+            </marquee>
+        </marquee>
+        <marquee behavior="alternate" scrollamount="15"  direction="down">
+            <marquee  behavior="alternate" scrollamount="10">
+                <img src="orange_leaf.gif" width="100px" height="70px"/>
+            </marquee>
+        </marquee>
+    </div>
   <div id="root">
     <nav class="sticky" id="stickyNav">
         <a href="#location">Location</a> |
@@ -218,8 +297,10 @@
       <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
 
       <div class="roundedImage">
-          <img src="background_leaves.png" alt="Delaware Gap in the fall">
+          <img src="background.png" alt="Delaware Gap in the fall">
       </div>
+      <img src="ivy.gif" width="350px" height="50px"/>
+
       <pre>.・。.・゜✭・.・✫・゜・。.</pre>
       <p>
         Slow Motion is an intimate, high fidelity, 3-day retreat celebrating music, 
@@ -235,6 +316,7 @@
         </div>
         <pre>╚═*.·:·.✧ ✦ ⋆⋅☆⋅⋆ ✧ ✦✧.·:·.*═╝</pre>
       </p>
+      <img src="ivy.gif" width="350px" height="50px"/>
       <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
     </div>
     <div class="content" id="location">
@@ -266,6 +348,7 @@
             Our favorites spots are Jenny Jump State Forest and campgrounds (8 minute drive), Mt. Tammany (10 min) and Worthington State Forest (20 min).
         </p>
         <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <img src="bear_footer.gif" width="350px" height="50px"/>
 
     </div>
     <div class="content">
@@ -274,11 +357,7 @@
         <img src="http://www.gigaglitters.com/created/q6OvLsZd9h.gif" width="300px" height="65px" border="0" alt="glitter maker" />
 
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-        <div class="roundedImage">
-            <img src="camp_hope_indoors.png" alt="Delaware Gap in the fall">
-            <pre>.・。.・゜✭・.・✫・゜・。.</pre>
-        </div>
-
+        
         <p>
             We were sure Camp Hope was the right space for Slow Motion when we learned of its ties back to the Paradise Garage - our own doorkeeper Angel worked there with a swath of club alumni in ’87.        
         </p>
@@ -320,6 +399,8 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
         
         <a href="camp_map.png" download="slow-motion-camp-map">Click to download!</a>
         <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <img src="ivy_2.gif" width="350px" height="50px"/>
+
     </div>
     <div class="content" id="transportation">
         <pre class="transportAscii">
@@ -404,6 +485,7 @@ ________(__)_____________(__)____
         <img src="http://www.gigaglitters.com/created/ZtfjTW6gHG.gif" width="200" height="60" border="0" alt="glitter maker" />
 
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <img src="party.gif" width="100px" height="70px"/>
         <h4>Slow Motion is about moving together, with care</h4>
         <p>
             Let’s build a space where everyone can feel good, free, and welcome. 
