@@ -8,33 +8,31 @@
   <style>
     *
     {
-        /* margin: 0; */
-        /* padding: 0; */
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
     }
 
+
     html {
-      scroll-behavior: smooth;
+        overflow-x: hidden;
     }
 
     body {
-      margin: 0;
-      font-family: monospace;
+      font-family: 'Times New Roman', Times, serif;
       background-color: rgb(57 85 109);
 
       background-attachment: scroll;
       background-image: url("background_leaves.png");
       background-size: 100% 200%;
-
-      width: 100%;
-      height: 100vh;
+      max-width: 100%;
+      overflow-x: hidden;
     }
 
     /* Root wraps the content divs */
     #root {
       width: 100%;
       height: 100%;
-      overflow: scroll;
 
       display: flex;
       flex-direction: column;
@@ -60,7 +58,7 @@
     nav {
         /* margin-top: 15px;
         margin-bottom: 15px; */
-        padding: 10px;
+        padding: 10px 0;
         text-align: center;
         position: fixed;
         bottom: 0;
@@ -213,39 +211,19 @@
 </head>
 <body>
     <div class="marqueeUnderLayer">
-        <marquee behavior="alternate" scrollamount="15" direction="right">
-            <marquee  behavior="alternate" scrollamount="10" direction="up">
-                <img src="leaf.gif" width="100px" height="70px"/>
-            </marquee>
-        </marquee>
         <marquee behavior="alternate" scrollamount="15">
             <marquee  behavior="alternate" scrollamount="10" direction="up">
                 <img src="leaf.gif" width="100px" height="70px"/>
             </marquee>
         </marquee>
         <marquee behavior="alternate" scrollamount="20"  direction="down">
-            <marquee  behavior="alternate" scrollamount="10" direction="left">
-                <img src="orange_leaf.gif" width="100px" height="70px"/>
-            </marquee>
-        </marquee>
-        <marquee behavior="alternate" scrollamount="20"  direction="down">
             <marquee  behavior="alternate" scrollamount="10" direction="right">
-                <img src="orange_leaf.gif" width="100px" height="70px"/>
-            </marquee>
-        </marquee>
-        <marquee behavior="alternate" scrollamount="20"  direction="right">
-            <marquee  behavior="alternate" scrollamount="10" direction="up">
                 <img src="orange_leaf.gif" width="100px" height="70px"/>
             </marquee>
         </marquee>
     </div>
 
     <div class="marqueeLayer">
-        <marquee behavior="alternate" scrollamount="20"  direction="down">
-            <marquee  behavior="alternate" scrollamount="10" direction="right">
-                <img src="orange_leaf.gif" width="100px" height="70px"/>
-            </marquee>
-        </marquee>
         <marquee behavior="alternate" scrollamount="10">
             <marquee  behavior="alternate" scrollamount="10" direction="down">
                 <img src="leaf.gif" width="100px" height="70px"/>
@@ -294,14 +272,9 @@
      |      88    88    Y8,,d8,   ,d8',d88b,_,88,_,d8,   ,d8'    8I   Yb,    
      |      88    88    `Y8P"Y8888P"  8P""Y88P""Y8P"Y8888P"      8I   `Y8    
       </pre>
-      <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-
-      <div class="roundedImage">
-          <img src="background.png" alt="Delaware Gap in the fall">
-      </div>
-      <img src="ivy.gif" width="350px" height="50px"/>
-
+      
       <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+      <br/>
       <p>
         Slow Motion is an intimate, high fidelity, 3-day retreat celebrating music, 
         dance and 9 years of community at Second Hand Records. It’s an extension of 
@@ -311,47 +284,67 @@
         <pre>╔═*.·:·.✧ ✦ ⋆⋅☆⋅⋆ ✧ ✦✧.·:·.*═╗</pre>
         <div class="ticketLink">
             <a href="https://www.slow-motion.net/pages/tickets">
-                <img src="http://www.gigaglitters.com/created/ZQhtJSKFx9.gif" width="360" height="60" border="0" alt="glitter maker" />
+                Tickets Here
             </a> 
         </div>
         <pre>╚═*.·:·.✧ ✦ ⋆⋅☆⋅⋆ ✧ ✦✧.·:·.*═╝</pre>
       </p>
-      <img src="ivy.gif" width="350px" height="50px"/>
+      <br/>
       <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
     </div>
+    <div class="content" id="artists">
+        <h1>Artists</h1>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <p>TBA... 🎵</p>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+    </div>
     <div class="content" id="location">
-        <!-- <img src="http://i.picasion.com/gl/92/kW2X.gif" width="240" height="46" border="0" alt="glitter maker" /> -->
-        <img src="http://www.gigaglitters.com/created/Rwyhq6rtTi.gif" width="240" height="60" border="0" alt="glitter maker" />
-
-        <!-- <img src="http://i.picasion.com/gl/92/kW2T.gif" width="301" height="46" border="0" alt="glitter maker" /> -->
+        <h1>Location</h1>
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <h4>Hope Conference & Renewal Center ✨ Blairstown, NJ</h4>
+        <h4>15 Ridgeway Ave, Blairstown, NJ 07825</h4>
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-        <div class="roundedImage">
-            <img src="blairstown.png" alt="Scenic view of Blairstown, NJ">
-        </div>
-        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
-
+        <br/>
+        <br/>
         <p>
-            ~1.5 hours driving from NYC, with public transport options <a href="#transportation">below</a>!
+            Camp Hope is 90 minutes by car from NYC. Located on 125 acres of idyllic forests and wetlands, 
+            and with its own private trail along Little Silver Lake, we knew we had a special location. 
+            <br/>
+            <br/>
+            We'll be nestled next to the Delaware Water Gap National Recreation Area and Kittatinny Mountain Ridge, 
+            full of hikes, trails, lookouts, streams and waterfalls.
         </p>
-        <p>
-            We'll be nestled next to the Delaware Water Gap National Recreation Area and Kittatinny Mountain Ridge full of hikes, trails, lookouts, streams and waterfalls.
-        </p>
-
+        <br/>
         <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <br/>
         <div class="roundedImage">
             <img src="delaware_gap.png" alt="Delaware Gap in the fall">
         </div>
+        <br/>
         <pre>.・。.・゜✭・.・✫・゜・。.</pre>
-        <p>
-            Our favorites spots are Jenny Jump State Forest and campgrounds (8 minute drive), Mt. Tammany (10 min) and Worthington State Forest (20 min).
-        </p>
-        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
-        <img src="bear_footer.gif" width="350px" height="50px"/>
+        <br/>
+        <div class="imageDouble">
+            <img src="lodging.png" alt="Cabin at camp hope">
+            <img src="bunk_beds.png" alt="bunk at camp hope">
+        </div>
+        <br/>
+        <br/>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <br/>
+        <h4  id="campmap">Camp Map</h4>
+        <br/>
+        <div class="image">
+            <img src="camp_map.png" alt="Map of camp grounds">
+        </div>
+        
+        <br/>
+        <a href="camp_map.png" download="slow-motion-camp-map">Click to download!</a>
+        <br/>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        
 
     </div>
-    <div class="content">
+    <!-- <div class="content">
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
 
         <img src="http://www.gigaglitters.com/created/q6OvLsZd9h.gif" width="300px" height="65px" border="0" alt="glitter maker" />
@@ -401,8 +394,198 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
         <pre>.・。.・゜✭・.・✫・゜・。.</pre>
         <img src="ivy_2.gif" width="350px" height="50px"/>
 
+    </div> -->
+    
+    <div class="content" id="lodging">
+        <h1>Lodging</h1>
+        <pre>
+      ....           ....           ....           ....     
+     ||             ||             ||             ||        
+ /"""l|\        /"""l|\        /"""l|\        /"""l|\       
+/_______\      /_______\      /_______\      /_______\      
+|  .-.  |------|  .-.  |------|  .-.  |------|  .-.  |------
+ __|1|__|      |__|2|__|      |__|3|__|      |__|4|__|      
+_\  \\__________\  \\__________\  \\__________\  \\_________
+------------------------------------------------------------
+------------------------------------------------------------
+        </pre>
+        <p>
+            For the best and easiest weekend, you can reserve a bunk in one of our furnished and heated cabins, 
+            with showers and bathrooms inside. 
+            <br/>
+            <br/>
+            Whether you’re flying solo or want to reserve together with your crew, we’ll make sure you’re taken care of. 
+            <br/>
+            <br/>
+            <a href="slowmotionweekender@gmail.com">Email us</a> at slowmotionweekender@gmail.com with any requests!
+        </p>
+
+        <br>
+        <p>
+            Tent camping is not allowed on-site but you can reserve camping spaces in advance at nearby <a href="https://dep.nj.gov/parksandforests/state-park/jenny-jump-state-forest/">Jenny Jump State Park Camping</a>
+        </p>
+        <br/>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <div class="imageDouble">
+            <img src="lodging.png" alt="Cabin at camp hope">
+            <img src="bunk_beds.png" alt="bunk at camp hope">
+        </div>
+    </div>
+
+    <div class="content" id="meals">
+        <h1>Meals</h1>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <p>
+            A veg-friendly meal plan for the weekend by [***] can be purchased <a href="">here</a>. 
+            <br/>
+            <a href="slowmotionweekender@gmail.com">Email us</a> with any dietary restrictions. Mini menu details will be added over the summer.
+            <br/>
+        </p>
+
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <p>
+            If you’d prefer to cook your own food, LIMITED spaces can be reserved in the dining hall kitchen by <a href="slowmotionweekender@gmail.com">emailing us</a>. 
+            There’s also a free communal grill (first come). All food must be stored in the dining hall or in an air-tight container / cooler - there are bears!
+        </p>
+    </div>
+
+    <div class="content" id="audio_visual">
+        <h1>Audio & Visual Menu</h1>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <br/>
+        <ul>
+            <li>11-point Klipschorn surround sound</li>
+            <li>4-point custom subwoofers by Jon Bless</li>
+            <li>UREI 1620 mixer</li>
+            <li>Dance floor lighting installation by Waldo Walle</li>
+            <li>Outdoor lanterns by Karina Valeeva</li>
+            <li>Artwork by Michiyo Ihara</li>
+        </ul>
+        <br/>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <br/>
+    </div>
+
+    <div class="content" id="rules">
+        <h1>Rules</h1>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <br/>
+        <h4>Slow Motion is about moving together, with care</h4>
+        <p>
+            Slow Motion is a space that we create together where everyone can feel free and welcome. 
+            <br/>
+            Say hi to people you may or may not know, kindness goes a long way!
+        </p>
+        <br/>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <br/>
+        <h4>Leave no trace</h4>
+        <p>
+            Treat Camp Hope like a home and leave it as we found it.
+            <br/>
+            <br/>
+            This means respecting the land and cleaning up after yourself. Don’t leave anything around on the grounds or in your cabin after checking out.
+        </p>
+        <br/>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <br/>
+        <h4>Our dance floor</h4>
+        <p><i>No phones, cameras, video or socials on the dance floor.</i></p>
+        <br/>
+        <p>
+            If you’re a dance floor talker, please stand off to the side and leave the floor to the dancers. Dancers, feel free to express yourselves! 
+        </p>
+        <br/>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <br/>
+        <h4>Smoking area will be designated on the day of</h4>
+        <p>
+            You’ll find a koburomi (a Japanese-style portable ash pouch) in your welcome kit to help keep the party clean and beautiful.
+            <br/>
+            <br/>
+            Smoking tobacco is only allowed in the <a href="camp_map.png" download="slow-motion-camp-map">camp map</a>
+        </p>
+        <br/>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <br/>
+        <h4>Recycling</h4>
+        <p>
+            Cooperate with Camp Hope’s firm recycling policy and place cans and bottles only in designated recycling bins.
+        </p>
+        <br/>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <br/>
+        <h4>Food storage</h4>
+        <p>
+            All food (including snacks) must be stored in the dining hall or in a sealed container in your cabin. There are bears!
+        </p>
+        <br/>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <br/>
+        <h4>Cabin etiquette</h4>
+        <p>
+            Please be quiet in the cabins when people are sleeping. You can hang in the dining hall 24/7.
+        </p>
+        <br/>
+        <p>
+            No tent camping, swimming in the lake, candles or speakers. If you have any questions about similar things, just         
+        </p>
+        <br/>
+        <p>
+            If someone around you seems unwell, is acting out of control, or making others uncomfortable, please let a Slow Motion staffer know right away.         
+        </p>
+        <br/>
+        <p>
+            Take care of yourself and each other! 
+        </p>
+        <br/>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
     </div>
     <div class="content" id="transportation">
+        <h1>Transportation</h1>
+        <pre class="transportAscii">
+                                                         _________________________   
+                    /\\      _____          _____       |   |     |     |    | |  \  
+     ,-----,       /  \\____/__|__\_    ___/__|__\___   |___|_____|_____|____|_|___\ 
+  ,--'---:---`--, /  |  _     |     `| |      |      `| |                    | |    \
+ ==(o)-----(o)==J    `(o)-------(o)=   `(o)------(o)'   `--(o)(o)--------------(o)--'  
+        </pre>
+        <p>
+            A shuttle bus will leave Second Hand Records on Friday 9/25 at 6:30pm and return to Second Hand Records on Sunday at 10am. The ride takes about 90 minutes
+        </p>
+        <br/>
+
+        <pre>╔═*.·:·.✧ ✦ ⋆⋅☆⋅⋆ ✧ ✦✧.·:·.*═╗</pre>
+        <div class="ticketLink">
+            <a href="https://www.slow-motion.net/pages/tickets">
+                Shuttle Bus Tickets Here
+            </a> 
+        </div>
+        <pre>╚═*.·:·.✧ ✦ ⋆⋅☆⋅⋆ ✧ ✦✧.·:·.*═╝</pre>
+
+        <br/>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <br/>
+
+        <p>
+            If you’re driving to Camp Hope, parking is free.
+        </p>
+        <br/>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <br/>
+        <p>
+            You can also take the NJ Transit Rail from NY Penn Station to Dover, NJ or take the <a href="https://martzbus.com/">Martz Bus</a> from NY Port Authority to Panther Valley 
+            (Fridays only, closest drop-off) or Stroudsburg, PA. 
+            <br/>
+            Have someone pick you up or call an Uber / Lyft.
+        </p>
+        <br/>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <br/>
+
+    </div>
+
+    <!-- <div class="content" id="transportation">
         <pre class="transportAscii">
                                                          _________________________   
                     /\\      _____          _____       |   |     |     |    | |  \  
@@ -474,124 +657,55 @@ ________(__)_____________(__)____
         <p>
             <p>If you need or can offer a ride between Brooklyn or a bus / train station, <a href="mailto:slowmotionweekender@gmail.com" title="mailto:slowmotionweekender@gmail.com">email us</a> and we'll get you sorted.</p>
         </p>
-    </div>
-    <div class="content" id="lineup">
+    </div> -->
+    <!-- <div class="content" id="lineup">
         <h4>Lineup</h4>
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <p>Lineup will be posted... 🎵</p>
-    </div>
-    <div class="content" id="rules">
-        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-        <img src="http://www.gigaglitters.com/created/ZtfjTW6gHG.gif" width="200" height="60" border="0" alt="glitter maker" />
-
-        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-        <img src="party.gif" width="100px" height="70px"/>
-        <h4>Slow Motion is about moving together, with care</h4>
-        <p>
-            Let’s build a space where everyone can feel good, free, and welcome. 
-            That means looking out for each other, being mindful of boundaries, and keeping the energy kind and open. 
-            Say hi to others!
-        </p>
-        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-        <h4>Leave no trace</h4>
-        <p>
-            Treat Camp Hope like a home and leave it as we found it—clean, cared for, and beautiful. 
-            <br/>
-            <br/>
-            That means cleaning up after yourself: cigarette butts, cans, cups, and trash all need to go in the right place. 
-            Don’t leave anything behind at your cabin or around the grounds.
-        </p>
-        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-        <h4>Our dance floor</h4>
-        <p>♪ ♬ ᕕ(⌐■_■)ᕗ ♪♬</p>
-        <p><b><i>No phones, cameras, video or socials on the dance floor.</i></b></p>
-        <p>
-            If you’re a dance floor talker, please stand off to the side and leave the floor to the dancers. 
-            <br/>
-            <br/>
-            Dancers, feel free to express yourselves!
-        </p>
-        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-        <h4>Smoking area will be designated on the day of</h4>
-        <p>
-            Camp Hope’s official policy doesn’t allow smoking. 
-            <br/>
-            <br/>
-            Smoking tobacco will only be allowed in the designated smoking area—we’ll let you know this location on the day-of. 
-            <br/>
-            <br/>
-            You’ll find a koburomi (a Japanese-style portable ash pouch) in your welcome kit to help keep the party clean and beautiful.
-        </p>
-        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-        <h4>No alcohol on site</h4>
-        <p>
-            Camp Hope’s official policy doesn’t allow alcohol. Please respect the space and keep beverages in a resealable container.
-        </p>
-        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-        <h4>Food storage</h4>
-        <p>
-            Food must be stored in the dining hall or in a sealed container in your cabin. There are bears!
-        </p>
-        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-        <h4>Cabin etiquette</h4>
-        <p>
-            Please be quiet in the cabins when people are sleeping. You can hang in the dining hall 24/7.
-        </p>
-        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-        <h4>No RVs or camping, swimming in the lake, candles, speakers or glitter</h4>
-        <p>
-            If you have any questions about similar things, just reach out beforehand.
-        </p>
-        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-        <h4>Take care of yourself and each other!</h4>
-        <p>✧( ु•⌄• )◞🍝🍝◟( •⌄• ✧)</p>
-        <p>
-            Make sure you’re getting enough rest, food, and water—and keep an eye on how you’re feeling. 
-            <br/>
-            <br/>
-            If someone around you seems unwell, is acting out of control, or making others uncomfortable, 
-            please let a Slow Motion staff member know right away.
-        </p>
-    </div>
-
+    </div> -->
     <div class="content" id="faq">
-        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-        <img src="http://www.gigaglitters.com/created/EtsDrk7xOf.gif" width="160" height="60" border="0" alt="glitter maker" />
+        <h1>F.A.Q</h1> 
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <div class="dropdown">
             <details>
-                <summary>What should I bring?</summary>
+                <summary><i>What should I bring?</i></summary>
+                <br/>
                 <ul>
                     <li>Comfortable clothing for day and night (layers, warm clothes, extra socks, waterproof gear if it rains)</li>
                     <li>Twin bedding, toiletries, towel and shower shoes</li>
                     <li>Reusable water bottle (we’ll have reusable cups available for a $1 deposit)</li>
                     <li>Resealable container, koozies or coolers for <i>special</i> drinks</li>
                     <li>Air-tight container or cooler for any snacks or food not stored in the dining hall</li>
-                    <li>Yoga mat if you’re participating in Saturday’s complimentary restorative yoga</li>
+                    <li>Yoga mat if you’re participating in Saturday’s complimentary restorative yoga [tbd]</li>
                     <li>Picnic blanket, hammock or anything else for lounging</li>
                     <li>Flashlight or headlamp, earplugs, sleep mask</li>
                     <li>Sunscreen and bug spray</li>
                     <li>Any medications or personal care items you may need</li>
                 </ul>
+                <br/>
                 Don’t bring laptops, speakers or valuables—unplug and enjoy the experience!
+                <br/>
+                <br/>
                 <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
             </details>
             <br/>
             <details>
-                <summary>Can I bring my own food?</summary>
+                <summary><i>Can I bring my own food?</i></summary>
                 <br/>
-                Yes! Instead of reserving a meal plan, you can request to reserve a spot in the dining hall kitchen to prepare your own meals. Space is limited, so reservations are required.
+                Yes! Instead of reserving a meal plan, you can reserve a space in the dining hall kitchen to prepare your own meals. Spaces are LIMITED, please e-mail us [link] to request one.
                 <br/>
                 <br/>
                 There’s also a shared outdoor grill available to all guests, first-come first-served.
                 <br/>
                 <br/>
                 There are bears! Any food or snacks must be stored in the dining hall or in a sealed container / cooler.
+                <br/>
+                <br/>
                 <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
             </details>
             <br/>
             <details>
-                <summary>What if it rains?</summary>
+                <summary><i>What if it rains?</i></summary>
                 <br/>
                 Rain or shine, Slow Motion goes on!
                 <br/>
@@ -600,62 +714,77 @@ ________(__)_____________(__)____
                 <br/>
                 <br/>
                 We recommend packing a lightweight rain jacket, waterproof shoes or boots, and extra dry outfits—just in case. 
+                <br/>
+                <br/>
                 <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
             </details>
             <br/>
             <details>
-                <summary>Where do I check in and park?</summary>
+                <summary><i>Where do I check in and park?</i></summary>
                 <br/>
-                Check-in opens at 4 PM on Friday and closes promptly at 10 PM. Head to the greeter station near the entrance to receive your wristband and cabin assignment.                
+                Check-in opens at 7PM on Friday and closes promptly at 10PM. Head to the welcome station near the entrance to receive your wristband and cabin assignment.                
                 <br/>
                 <br/>
                 Parking is free and located near the entrance of Camp Hope, across from the Upper Lodge, or down the hill near the Dining Hall.
+                <br/>
+                <br/>
+                Download the Slow Motion map <a href="camp_map.png" download="slow-motion-camp-map">here</a>!
+                <br/>
+                <br/>
                 <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
             </details>
             <br/>
             <details>
-                <summary>Where's my bunk?</summary>
+                <summary><i>Where's my bunk?</i></summary>
                 <br/>
                 <b>You’ll receive your cabin assignment when checking in at the greeter station near Camp Hope’s entrance. </b>
                 <br/>
                 <br/>
-                When buying your ticket, let us know the names of any guests in your group and we’ll do our best to put you together.
+                When buying your ticket,  <a href="slowmotionweekender@gmail.com">email us</a> to let us know the names of any guests in your group and we’ll do our best to put you together.
                 <br/>
                 <br/>
-                Solo guests are welcome and celebrated! If you have any special requests or accessibility needs, please email us in advance—we’re here to help!
+                Solo guests are welcome and celebrated! If you have any special requests or accessibility needs, just <a href="slowmotionweekender@gmail.com">email us</a> in advance - we’re here to help!
+                <br/>
+                <br/>
                 <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
             </details>
             <br/>
             <details>
-                <summary>Can I leave temporarily?</summary>
+                <summary><i>I bought a GA ticket, can I add-on a cabin or meal plan later?</i></summary>
                 <br/>
-                Yes! Feel free to explore the Delaware Water Gap or try local spots. Just keep your wristband.
+                Yes! Add a cabin bunk or meal plan <a href="">here</a>.
+                <br/>
+                <br/>
                 <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
             </details>
             <br/>
             <details>
-                <summary>Where’s lost & found?</summary>
+                <summary><i>Can I refund or transfer my ticket?</i></summary>
                 <br/>
-                Lost & found is located in the dining hall. If you find something that belongs to someone, please bring it there right away.
-                <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
-            </details>
-            <br/>
-            <details>
-                <summary>Can I refund or transfer my ticket?</summary>
+                All ticket sales are final and non-refundable - this helps us cover fixed costs and keeps ticket prices as low as possible. However, we do offer ticket transfers.
                 <br/>
-                All ticket sales are final and non-refundable—this helps us cover fixed costs and keeps ticket prices as low as possible. However, we do offer ticket transfers:
-                <ul>
-                    <li>You may transfer your ticket to someone else by <a href="mailto:slowmotionweekender@gmail.com" title="mailto:slowmotionweekender@gmail.com">contacting us </a>at least 7 days before Slow Motion with the recipient’s full name and email address.</li>
-                    <li>If you’d like to upgrade your ticket (e.g., from General Admission to All-In), you can do so through your Slow Motion account or by <a href="mailto:slowmotionweekender@gmail.com" title="mailto:slowmotionweekender@gmail.com">contacting us</a>. </li>
-                </ul>
+                <br/>
+                You may transfer your ticket to someone else by  <a href="slowmotionweekender@gmail.com">emailing us</a> at least 7 days before Slow Motion with the recipient’s full name and email address.
+                <br/>
+                <br/>
                 Availability may be limited, so we recommend requesting changes early.
+                <br/>
+                <br/>
+                <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+            </details>
+            <br/>
+            <details>
+                <summary><i>Any other questions</i></summary>
+                <br/>
+                <a href="slowmotionweekender@gmail.com">Email us</a> at slowmotionweekender@gmail.com
+                <br/>
+                <br/>
                 <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
             </details>
         </div>
     </div>
     <div class="content" id="contact">
-      <p>Join us for music, art, and open skies 🌤️</p>
-      <p>Room for anything else you can think of!</p>
+      Email: slowmotionweekender@gmail.com
     </div>
   </div>
 
