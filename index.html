@@ -14,14 +14,35 @@
     }
 
 
+    summary {
+        list-style: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    summary::before {
+        content: "▷";
+        margin-right: 8px;
+        font-family: "Segoe UI Symbol", "Noto Sans Symbols", Arial, sans-serif;
+        transition: transform 0.2s ease;
+    }
+    details[open] summary::before {
+        transform: rotate(90deg);
+    }
+
     html {
         overflow-x: hidden;
     }
 
     body {
-      font-family: 'Times New Roman', Times, serif;
-        background-image: url("assets/background_leaves_2.png");
-        background-repeat: repeat;
+        font-family: 'Times New Roman', Times, serif;
+        /* background-image: url("assets/background_leaves_2.png");
+        background-repeat: repeat; */
     }
 
     /* Root wraps the content divs */
@@ -84,6 +105,9 @@
       padding: 1em;
       box-sizing: border-box;
       width: 90%;
+      color: rgb(255, 255, 255);
+
+      font-family: cursive;
     }
 
     .content {
@@ -143,6 +167,7 @@
         margin: 3px;
         font-family: cursive;
         font-style: italic;
+        text-align: center;
     }
 
     h3, h4, h5, p {
@@ -158,8 +183,13 @@
             max-width: 85%;
         }
         body {
-            background-attachment: scroll;
+            background-image: url("assets/background_leaves_2.png");
+            background-repeat: repeat;
         }
+    }
+
+    ul {
+        list-style-type: circle;
     }
 
 
@@ -192,6 +222,16 @@
         position: absolute;
         height: 100vh;
         display: flex;
+    }
+    
+    .marqueeUnderLayer,
+    .marqueeLayer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
     }
 
     .marqueeUnderLayer marquee{
@@ -304,25 +344,25 @@
 
     <div class="content" id="audio_visual">
         <h1>Audio & Visual Menu</h1>
-        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <br/>
         <div class="roundedImage">
             <img src="assets/audio_visual_1.jpg" alt="mixer">
         </div>
         <br/>
-        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
-        <br/>
-        <ul>
-            <li>11-point Klipschorn surround sound</li>
-            <li>4-point custom subwoofers by Jon Bless</li>
-            <li>UREI 1620 mixer</li>
-            <li>Wooden dance floor</li>
-            <li>Lighting installation by Waldo Walle</li>
-            <li>Optokinetic visual effects by Ben Bealmear</li>
-            <li>Artwork by Michiyo Ihara</li>
-        </ul>
-        <br/>
-        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <p>11-point Klipschorn surround sound</p>
+        <pre>★ ○ ★ ○ ★ ○ ★</pre>
+        <p>4-point custom subwoofers by Jon Bless</p>
+        <pre>★ ○ ★ ○ ★ ○ ★</pre>
+        <p>UREI 1620 mixer</p>
+        <pre>★ ○ ★ ○ ★ ○ ★</pre>
+        <p>Wooden dance floor</p>
+        <pre>★ ○ ★ ○ ★ ○ ★</pre>
+        <p>Lighting installation by Waldo Walle</p>
+        <pre>★ ○ ★ ○ ★ ○ ★</pre>
+        <p>Optokinetic visuals by Ben Bealmear</p>
+        <pre>★ ○ ★ ○ ★ ○ ★</pre>
+        <p>Artwork by Michiyo Ihara</p>
         <br/>
         <div class="image">
             <img src="assets/audio_visual_3.png" alt="mixer">
@@ -333,7 +373,7 @@
 
     <div class="content" id="activities">
         <h1>Activities</h1>
-        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <br/>
         <div class="roundedImage">
             <img src="assets/activities_1.jpg" alt="ikebana">
@@ -388,14 +428,11 @@
             <pre>╚═*.·:·.✧ ✦ ⋆⋅☆⋅⋆ ✧ ✦✧.·:·.*═╝</pre>
         </p>
         <br/>
-
-        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
-        <br/>
         <p>
-            If you’d prefer to cook your own food, LIMITED spaces can be reserved in the Dining Hall kitchen in advance. There’s also a free communal grill (first come). 
+            If you’d prefer to cook your own food, LIMITED spaces can be reserved in the <a href="#camp_map">Dining Hall</a> kitchen in advance. There’s also a free communal grill (first come). 
             <br/>
             <br/>
-            There are bears - we’re in the woods! All food must be stored in the Dining Hall or in an air-tight container/cooler.
+            There are bears - we’re in the woods! All food must be stored in the <a href="#camp_map">Dining Hall</a> or in an air-tight container/cooler.
         </p>
         <br/>
         <pre>.・。.・゜✭・.・✫・゜・。.</pre>
@@ -404,6 +441,8 @@
 
     <div class="content" id="lodging">
         <h1>Lodging</h1>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <br/>
         <pre>
       ....           ....           ....           ....     
      ||             ||             ||             ||        
@@ -456,7 +495,7 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
             Tent camping is not allowed on-site but you can reserve camping spaces in advance at nearby <a href="https://dep.nj.gov/parksandforests/state-park/jenny-jump-state-forest/" target=“_blank”>Jenny Jump State Park Camping</a>.
         </p>
         <br/>
-        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
         <br/>
         <div class="imageDouble">
             <img src="assets/lodging_3.png" alt="Cabin at camp hope">
@@ -468,6 +507,8 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
 
     <div class="content" id="transportation">
         <h1>Transportation</h1>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <br/>
         <pre class="transportAscii">
                                                          _________________________   
                     /\\      _____          _____       |   |     |     |    | |  \  
@@ -482,14 +523,14 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
             <br/>
             <pre>____________________</pre>
             <br/>
-            <b>Second Hand Records → Slow Motion</b>
+            <b><i>Second Hand Records → Slow Motion</i></b>
             <p>Friday 9/25 at 1600h</p>
             <br/>
             <pre>____________________</pre>
             <br/>
-            <b>Slow Motion → Second Hand Records</b>
+            <b><i>Slow Motion → Second Hand Records</i></b>
             <p>Sunday 9/27 at 1000h</p>
-            <p>Please meet at the Welcome Station for return bus!</p>
+            <p>Please meet at the <a href="#camp_map">Welcome Station</a> for return bus!</p>
             <br/>
             <pre>____________________</pre>
             <br/>
@@ -542,8 +583,8 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <h4> ♡ Hope Conference & Renewal Center ♡</h4>
         <h4>15 Ridgeway Ave, Blairstown, NJ 07825</h4>
-        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <br/>
+        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
         <br/>
         <div class="roundedImage">
             <img src="assets/delaware_gap.png" alt="Delaware Gap in the fall">
@@ -568,7 +609,7 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
     </div>
 
     <div class="content" id="camp_map">
-        <h1  id="campmap">Camp Map</h1>
+        <h1  id="campmap">Slow Motion Map</h1>
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <br/>
         <div class="image">
@@ -586,7 +627,7 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <br/>
         <p>
-            We welcome you to be <b>free</b> and to help us create a freeing, feel-good environment that you want to <b>return</b> to.
+            We welcome you to be <b><i>free</i></b> and to help us create a freeing, feel-good environment that you want to <b><i>return</i></b> to.
             <br/>
             <br/>
             Respect, kindness and community are key! 
@@ -625,21 +666,21 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
             You’ll find a koburomi (a Japanese-style portable ash pouch) in your welcome kit to help keep the party clean and beautiful.
             <br/>
             <br/>
-            Smoking tobacco is only allowed in the designated area on the <a href="#camp_map" download="slow-motion-camp-map">Camp Map</a>.
+            Smoking tobacco is only allowed in the designated area on the <a href="#camp_map" download="slow-motion-camp-map">Slow Motion Map</a>.
         </p>
         <br/>
         <pre>.・。.・゜✭・.・✫・゜・。.</pre>
         <br/>
         <h4>Food storage</h4>
         <p>
-            There are bears! All food (including snacks in sealed packaging) must be stored in the Dining Hall or in a sealed container in your cabin. 
+            There are bears! All food (including snacks in sealed packaging) must be stored in the <a href="#camp_map">Dining Hall</a> or in a sealed container in your cabin. 
         </p>
         <br/>
         <pre>.・。.・゜✭・.・✫・゜・。.</pre>
         <br/>
         <h4>Camp Etiquette</h4>
         <p>
-            Please be quiet in the cabins when people are sleeping. You can hang in the Dining Hall 24/7.
+            Please be quiet in the cabins when people are sleeping. You can hang in the <a href="#camp_map">Dining Hall</a> 24/7.
         </p>
         <p>
             No tent camping, swimming in the lake, candles or speakers.
@@ -678,7 +719,7 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
                     <li>Twin bedding for your cabin bunk, toiletries, towel and shower shoes </li>
                     <li>Reusable water bottle (we’ll have reusable cups available for $1)</li>
                     <li>Coolers, resealable containers and koozies for your beverages </li>
-                    <li>Air-tight container or cooler for any snacks or food not stored in the Dining Hall </li>
+                    <li>Air-tight container or cooler for any snacks or food not stored in the <a href="#camp_map">Dining Hall</a></li>
                     <li>Picnic blanket, hammock, crafts, games, books, cooler or anything else for lounging
                     </li>
                     <li>Yoga mat or blanket for free movement workshop on Saturday by Simeng Wang
@@ -703,16 +744,16 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
             <details>
                 <summary><i>Can I bring my own food?</i></summary>
                 <br/>
-                Yes! Instead of reserving a meal plan, you can reserve a space in the dining hall kitchen to prepare your own meals. Spaces are LIMITED, please 
+                Yes! Instead of reserving a meal plan, you can reserve a space in the <a href="#camp_map">Dining Hall</a> kitchen to prepare your own meals. Spaces are LIMITED, please 
 
-                <a href="mailto:slowmotionweekender@gmail.com?subject=Slow Motion Weekender&body=Hello! My name is   and I'd like to reserve a space in the dining hall">email us</a>
+                <a href="mailto:slowmotionweekender@gmail.com?subject=Slow Motion Weekender&body=Hello! My name is   and I'd like to reserve a space in the Dining Hall">email us</a>
                  to request one.
                 <br/>
                 <br/>
                 There’s also a shared outdoor grill available to all guests, first-come first-served.
                 <br/>
                 <br/>
-                There are bears! Any food or snacks must be stored in the dining hall or in a sealed container / cooler.
+                There are bears! Any food or snacks must be stored in the <a href="#camp_map">Dining Hall</a> or in a sealed container / cooler.
                 <br/>
                 <br/>
                 <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
@@ -721,7 +762,7 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
             <details>
                 <summary><i>How can I lower the cost of my ticket?</i></summary>
                 <br/>
-                Save on fees by buying your ticket via Venmo (@secondhandrecordsnyc) or <a href="slowmotionweekender@gmail.com">email us</a> for an easy payment plan. We want to see you at Slow Motion! 
+                Save on fees by buying your ticket via Venmo (@secondhandrecordsnyc) or <a href="mailto:slowmotionweekender@gmail.com" target="_blank">email us</a> for an easy payment plan. We want to see you at Slow Motion! 
                 <br/>
                 <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
             </details>
@@ -732,7 +773,7 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
                 Rain or shine, Slow Motion goes on!
                 <br/>
                 <br/>
-                Our dancefloor and lighting installation will be <b>inside</b> :)
+                Our dancefloor and lighting installation will be <b><i>inside</i></b> :)
                 <br/>
                 <br/>
                 We recommend packing a lightweight rain jacket, waterproof shoes or boots, and extra dry outfits—just in case. 
@@ -744,13 +785,16 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
             <details>
                 <summary><i>Where do I check in and park?</i></summary>
                 <br/>
-                Check-in opens at 7PM on Friday and closes promptly at 10PM. Head to the welcome station near the entrance to receive your wristband and cabin assignment.                
+                Check-in opens at 7PM on Friday and closes promptly at 10PM. 
                 <br/>
                 <br/>
-                Parking is free and located near the entrance of Camp Hope, across from the Upper Lodge, or down the hill near the Dining Hall.
+                Head to the <a href="#camp_map">Welcome Station</a> near the entrance to receive your wristband and cabin assignment.                
                 <br/>
                 <br/>
-                Download the Slow Motion map <a href="camp_map.png" download="slow-motion-camp-map">here</a>!
+                Parking is free and located near the entrance of Camp Hope, across from the Upper Lodge, or down the hill near the <a href="#camp_map">Dining Hall</a>.
+                <br/>
+                <br/>
+                Download the Slow Motion Map <a href="assets/camp_map.jpg" download="slow-motion-camp-map" target="_blank">here</a>!
                 <br/>
                 <br/>
                 <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
@@ -846,7 +890,41 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
     </div>
 
     <div class="buffer">
-      Email: slowmotionweekender@gmail.com
+        Get ready for life in...
+        <br/>
+        <br/>
+        <pre>
+          (     __)                          __   _            (__)    
+          ,gg,            `-(       __)    _(  )_( )_        (_    )  __)-'    
+         i8""8i   ,dPYb,     (____)       (_   _    _)        `-(____)-'@@,    
+         `8,,8'   IP'`Yb  - -  :   :  - -   (_) (__)      ,,,.   ,@@@@@@/@@,   
+          `88'    I8  8I      / `-' \                  ,&%%&%&&%,@@@@@/@@@@@@  
+          dP"8,   I8  8'         |                    ,%&\%&&%&&%,@@@\@@@/@@@  
+         dP' `8a  I8 dP    ,ggggg,   gg          gg   %&&%&%&/%&&%@@\@@/ /@@@  
+        dP'   `Yb I8dP    dP"  "Y8gggI8    I8    88b  %&&%/ %&%%&&@@\ V /@@'   
+    _ ,dP'     I8 I8P    i8'    ,8I  I8    I8    8I   `&%\ ` /%&'    |.|       
+    "888,,____,dP,d8b,_ ,d8,   ,d8' ,d8,  ,d8,  ,8I       |o|     /\ | |       
+    a8P"Y88888P" 8P'"Y88P"Y8888P"   P""Y88P""Y88P"      /\|.|    //\\  /\      
+  `'. .'`'. .'`'. .'`'. .'`'                           //\\._\  ///\\ //\\//_  
+          ,ggg, ,ggg,_,ggg,  `'. .'`'. .'`'. .'`'. .  ///\\\      ][ ///\\\    
+         dP""Y8dP""Y88P""Y8b              I8            ][             ][      
+         Yb, `88'  `88'  `88              I8                                   
+   _( )_  `"  88    88    88           88888888 gg  `'. .'`'. .'`'. .'`'. .'`'.
+  (_(%)_)     88    88    88              I8    ""                             
+   (_)\       88    88    88    ,ggggg,   I8    gg     ,ggggg, ,ggg,,ggg,      
+       | __   88    88    88   dP"  "Y8gggI8    88    dP"  "Y8g8" "8P" "8,     
+       |/_/   88    88    88  i8'    ,8I ,I8,   88   i8'    ,8I    8I   8I     
+       |      88    88    Y8,,d8,   ,d8',d88b,_,88,_,d8,   ,d8'    8I   Yb,    
+       |      88    88    `Y8P"Y8888P"  8P""Y88P""Y8P"Y8888P"      8I   `Y8    
+
+
+
+
+
+
+
+
+        </pre>
     </div>
   </div>
 
