@@ -255,6 +255,29 @@
         pointer-events: none
     }
 
+    .buffer {
+    position: relative;
+    overflow: hidden;
+    }
+
+    .buffer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("assets/blur_edges.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    z-index: -2;
+    }
+
+    .buffer > * {
+    position: relative;
+    z-index: -1;
+    }
+
     
   </style>
 </head>
@@ -370,11 +393,7 @@
         <pre>★ ○ ★ ○ ★ ○ ★</pre>
         <p>Artwork by Michiyo Ihara</p>
         <br/>
-        <div class="image">
-            <img src="assets/audio_visual_3.png" alt="mixer">
-        </div>
-        <br/>
-        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
     </div>
 
     <div class="content" id="activities">
@@ -387,7 +406,7 @@
         <br/>
         <pre>.・。.・゜✭・.・✫・゜・。.</pre>
         <br/>
-        <p>Art Therapist, Simeng Wang, will teach a free movement workshop.</p>
+        <p>Art Therapist, Simeng Wang (LCAT-LP), will teach a free movement workshop.</p>
         <br/>
         <pre>.・。.・゜✭・.・✫・゜・。.</pre>
         <br/>
@@ -407,13 +426,7 @@
         <br/>
         <p>Explore the private hiking trail along Little Silver Lake, or bring a blanket, hammock, crafts, games, books or anything else for lounging.</p>
         <br/>
-        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
-        <br/>
-        <div class="roundedImage">
-            <img src="assets/activities_3.png" alt="mixer">
-        </div>
-        <br/>
-        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
     </div>
 
     <div class="content" id="meals">
@@ -442,7 +455,7 @@
             There are bears - we’re in the woods! All food must be stored in the Dining Hall or in an air-tight container/cooler.
         </p>
         <br/>
-        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
         <br/>
     </div>
 
@@ -502,13 +515,7 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
             Tent camping is not allowed on-site but you can reserve camping spaces in advance at nearby <a href="https://dep.nj.gov/parksandforests/state-park/jenny-jump-state-forest/" target=“_blank”>Jenny Jump State Park Camping</a>.
         </p>
         <br/>
-        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
-        <br/>
-        <div class="roundedImage">
-            <img src="assets/lodging_1.png" alt="forest view on grounds">
-        </div>
-        <br/>
-        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
     </div>
 
     <div class="content" id="transportation">
@@ -602,7 +609,6 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
             <img src="assets/location_1.png" alt="Delaware Gap in the fall">
         </div>
         <br/>
-        <br/>
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
     </div>
 
@@ -623,6 +629,10 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
     <div class="content" id="rules">
         <h1>Rules</h1>
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
+        <br/>
+        <div class="roundedImage">
+            <img src="assets/activities_3.png" alt="mixer">
+        </div>
         <br/>
         <p>
             We welcome you to be <b><i>free</i></b> and to help us create a freeing, feel-good environment that you want to <b><i>return</i></b> to.
@@ -702,7 +712,7 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
         <br/>
         <h4><b><i>Any other questions? Please free to <a href="mailto:slowmotionweekender@gmail.com?subject=Slow Motion Weekender&body=Hello! My name is   and I have a question about:">email us</a></i></b>.</h4>
         <br/>
-        <pre>.・。.・゜✭・.・✫・゜・。.</pre>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
     </div>
 
     <div class="content" id="faq">
@@ -720,7 +730,7 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
                     <li>Air-tight container or cooler for any snacks or food not stored in the Dining Hall</li>
                     <li>Picnic blanket, hammock, crafts, games, books, cooler or anything else for lounging
                     </li>
-                    <li>Yoga mat or blanket for free movement workshop on Saturday by Simeng Wang
+                    <li>Yoga mat or blanket for free movement workshop on Saturday by Simeng Wang (LCAT-LP)
                     </li>
                     <li>
                         Flashlight or headlamp (we’re in the woods, and it’s beautifully dark), earplugs, sleep mask
@@ -843,9 +853,9 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
                 Email us at <a href="slowmotionweekender@gmail.com">slowmotionweekender@gmail.com</a>
                 <br/>
                 <br/>
-                <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
             </details>
         </div>
+        <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
     </div>
 
 
@@ -867,7 +877,6 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
         <br/>
         <h4><a href="mailto:slowmotionweekender@gmail.com?subject=Slow Motion Weekender&body=Hello! My name is  and I have a question about:">slowmotionweekender@gmail.com</a></h4>
 
-        <br/>
         <br/>
         <pre>｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡･ﾟﾟ･｡</pre>
     </div>
@@ -924,6 +933,7 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
 
         </pre>
     </div>
+    <div class="bottom-bg"></div>
   </div>
 
   <script>
