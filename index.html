@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preload" as="image" href="assets/background_leaves.webp">
+  <link rel="preload" as="image" href="assets/background_leaves.webp">
   <link rel="preload" as="image" href="assets/background_compressed.webp">
   <link rel="preload" as="image" href="assets/camp_map.jpg">
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+  <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Slow Motion</title>
 
-  <style>
+  <!-- <style>
     *
     {
         margin: 0;
@@ -263,28 +265,14 @@
         position: relative;
         overflow: hidden;
         z-index: -1;
+
+        background-image: url("assets/blur_edges.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
     }
-
-    .buffer::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background-image: url("assets/blur_edges.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    z-index: -2;
-    }
-
-    .buffer > * {
-    position: relative;
-    z-index: -1;
-    }
-
     
-  </style>
+  </style> -->
 </head>
 <body>
     <div class="marqueeUnderLayer">
