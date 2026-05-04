@@ -50,7 +50,13 @@
   ul {
     list-style-type: circle;
   }
-  
+
+  pre {
+    font-family:
+      "Courier New",
+      monospace,
+      "Noto Sans Symbols";
+  }
   
   /* =========================
      LAYOUT
