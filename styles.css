@@ -116,18 +116,42 @@
     text-align: center;
     position: fixed;
     bottom: 0;
+  
     line-height: 1.5em;
-    color: white;
     font-weight: bold;
-    border-radius: 5%;
-    background-color: rgb(36 49 22 / 96%);
+  
+    border-radius: 8px;
+  
+    color: white;
+    background-color: rgba(36, 49, 22, 0.731);
+  
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  
+    z-index: 10;
   }
   
   nav a {
     color: white;
     font-weight: bold;
+    text-decoration: none;
   }
   
+  /* Desktop layout */
+  @media (min-width: 601px) {
+    #stickyNav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 8px;
+    }
+  
+    /* remove manual line breaks on desktop */
+    #stickyNav br {
+      display: none;
+    }
+  }
   
   /* =========================
      IMAGES
