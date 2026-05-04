@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
       x: random(0, window.innerWidth),
       y: random(0, window.innerHeight), // IMPORTANT: full screen spawn
       vx: random(-0.6, 0.6),
-      vy: random(0.8, 2.2),
+      vy: random(0.8, 1.2),
       rot: random(0, 360),
       vr: random(-1.5, 1.5)
     };
