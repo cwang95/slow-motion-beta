@@ -224,38 +224,21 @@
   
   
   /* =========================
-     MARQUEE / EFFECTS
+     LEAF EFFECTS
   ========================= */
-  
-  .fallingLeaves {
-    position: absolute;
-    height: 100vh;
-    display: flex;
-  }
-  
-  .marqueeUnderLayer,
-  .marqueeLayer {
+  #leaf-container {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
   }
-  
-  .marqueeUnderLayer marquee {
-    z-index: -1;
+  .leaf {
     position: absolute;
-    height: 100vh;
-  }
-  
-  .marqueeLayer marquee {
-    height: 100vh;
-    position: absolute;
-  }
-  
-  marquee {
-    pointer-events: none;
+    width: 50px;
+    height: auto;
+    will-change: transform;
+    opacity: .8;
   }
   
   

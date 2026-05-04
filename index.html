@@ -13,31 +13,7 @@
   <title>Slow Motion</title>
 </head>
 <body>
-    <div class="marqueeUnderLayer">
-        <marquee behavior="alternate" scrollamount="15">
-            <marquee  behavior="alternate" scrollamount="10" direction="up">
-                <img src="assets/leaf.gif" width="100px" height="70px"/>
-            </marquee>
-        </marquee>
-        <marquee behavior="alternate" scrollamount="20"  direction="down">
-            <marquee  behavior="alternate" scrollamount="10" direction="right">
-                <img src="assets/orange_leaf.gif" width="100px" height="70px"/>
-            </marquee>
-        </marquee>
-    </div>
-
-    <div class="marqueeLayer">
-        <marquee behavior="alternate" scrollamount="10">
-            <marquee  behavior="alternate" scrollamount="10" direction="down">
-                <img src="assets/leaf.gif" width="100px" height="70px"/>
-            </marquee>
-        </marquee>
-        <marquee behavior="alternate" scrollamount="15"  direction="down">
-            <marquee  behavior="alternate" scrollamount="10">
-                <img src="assets/orange_leaf.gif" width="100px" height="70px"/>
-            </marquee>
-        </marquee>
-    </div>
+  <div id="leaf-container"></div>
   <div id="root">
     <nav class="sticky" id="stickyNav">
         <a href="#intro">Tickets</a> |
@@ -662,9 +638,6 @@ _\  \\__________\  \\__________\  \\__________\  \\_________
         </pre>
     </div>
   </div>
-
-  <script>
-      
-  </script>
+  <script src="leaves.js"></script>
 </body>
 </html>
