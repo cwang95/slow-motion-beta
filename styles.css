@@ -51,13 +51,6 @@
     list-style-type: circle;
   }
 
-  pre {
-    font-family:
-      "Courier New",
-      monospace,
-      "Noto Sans Symbols";
-  }
-  
   .wave {
     font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", sans-serif;
   }
