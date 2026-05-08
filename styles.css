@@ -189,7 +189,7 @@
 
   .heroImage img {
     width: 90%;
-    max-width: 480px;
+    max-width: 480px; /* Adjust for desktop size here */
     border-radius: 10px;
     display: block;
     margin: 0 auto;
