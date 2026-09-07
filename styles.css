@@ -79,6 +79,13 @@
   
   pre {
     font-size: 11px;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+.artBlock, .transportAscii {
+    max-width: 100%;
+    overflow-x: auto;
   }
   
   ul {
