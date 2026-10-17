@@ -1,0 +1,8 @@
+body{max-width:40em;margin:2em auto;padding:0 1em;font:1.1em/1.6 Georgia,serif;color:#222;background:#fff}
+a{color:#00e}a:visited{color:#551a8b}
+h1,h2{line-height:1.2}
+nav{margin-bottom:2em}
+.date{color:#666;font-size:.9em}
+ul.posts{list-style:none;padding:0}
+ul.posts li{margin:.5em 0}
+footer{margin-top:3em;color:#666;font-size:.9em}
